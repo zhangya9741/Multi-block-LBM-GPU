@@ -2,10 +2,10 @@
 
 #ifndef _GEO
 #define _GEO
-#include "geo/geometry.h"
+#include "geometry.h"
 #endif
 
-// Geometry×Ô¶¯»¯      
+// Geometry arrangement    
 
 P4 AreaDefine[number_area];
 AREA Areas[number_area];

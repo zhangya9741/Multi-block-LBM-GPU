@@ -31,8 +31,8 @@ struct P4d{
 };
 struct P4d4i
 {
-	P4d reduced;  //无量纲区域坐标
-	P4 move;  //取值为-1， 0， 1
+	P4d reduced;  
+	P4 move;
 };
 struct Int3{
 	Lbi i;

@@ -42,13 +42,13 @@ typedef double Lbd;
 
 Lbd w[9]={4./9,1./9,1./9,1./9,1./9,1./36,1./36,1./36,1./36};
 Lbi e[2*9]={0, 1, 0, -1, 0, 1, -1, -1, 1,0, 0, 1, 0, -1, 1, 1, -1, -1};
-Lbi opp[9]={0,3,4,1,2,7,8,5,6};//标准反弹
-Lbi slip[9]={0,1,4,3,2,8,7,6,5};
+Lbi opp[9]={0,3,4,1,2,7,8,5,6};//strandred bounce back of LBM
+Lbi slip[9]={0,1,4,3,2,8,7,6,5}; //slip boundary of LBM
 
 __constant__ Lbd w_gpu[Q]={4./9,1./9,1./9,1./9,1./9,1./36,1./36,1./36,1./36};
 __constant__ Lbi e_gpu[2*Q]={0, 1, 0, -1, 0, 1, -1, -1, 1,0, 0, 1, 0, -1, 1, 1, -1, -1};
-__constant__ Lbi opp_gpu[Q]={0,3,4,1,2,7,8,5,6};//标准反弹
-__constant__ Lbi slip_gpu[Q]={0,1,4,3,2,8,7,6,5};
+__constant__ Lbi opp_gpu[Q]={0,3,4,1,2,7,8,5,6};//strandred bounce back of LBM
+__constant__ Lbi slip_gpu[Q]={0,1,4,3,2,8,7,6,5};//slip boundary of LBM
 
 __constant__ Lbd A_gpu=1.0,B_gpu=-3.0;
 __constant__ Lbd M_gpu[Q][Q]={

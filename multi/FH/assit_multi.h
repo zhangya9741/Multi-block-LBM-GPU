@@ -15,7 +15,7 @@ __global__ void c_c_boundary_transfer(AREA area1, AREA area2, D2Q9 pp1, D2Q9 pp2
 	Lbi ys2 = line_Inf.line_F.ystart;
 	Lbi nx2 = area2.nx;
 
-	//1 c为源数据，2 f为目标
+	//1 c, source;2 f, target.
 	if (ip < line_Inf.Nc)
 	{
 		Lbi i1 = 0, j1 = 0,  ixy1 = 0, i2 = 0, j2 = 0, ixy2 = 0;

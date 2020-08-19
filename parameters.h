@@ -12,8 +12,8 @@
 
 #define _BGK
 
-//#define _GEO_2_5  
-#define _GEO_4_9  
+#define _GEO_2_5  
+//#define _GEO_4_9  //Fig. 7 of the paper (DOI: 10.1142/S0219876218400029)
 //GEO_(Total number of refinement levels)_(Total number of computationsl domains)£¬
 //Please define geometry parameters in geo/geometry.h !!!
 

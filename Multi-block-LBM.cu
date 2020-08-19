@@ -38,7 +38,7 @@ int main()
 	}
 
 	/*To allocate multi-block variables*/
-	/*Temperal interpolation*/
+	/*Temporal interpolation*/
 	Ff_Store Line_T3_C[number_line>0 ? number_line : 1];
 	for (Lbi a=0; a<number_line; a++)
 	{ 
@@ -60,7 +60,7 @@ int main()
 	cusparseHandle_t handle;
 	cusparseCreate(&handle);
 
-	/*Spacial interpolation*/
+	/*Spatial interpolation*/
 	FM_spline3 Line_Spline3_C[number_line>0 ? number_line : 1];
 	for (Lbi a=0; a<number_line; a++)
 	{

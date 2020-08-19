@@ -9,7 +9,6 @@ __device__ inline Lbd feq(Lbi k, Lbd rh, Lbd uxx, Lbd uyy)
 }
 __device__ inline void Meq(Lbd &rh, Lbd &uxx, Lbd &uyy, Lbd *meq)
 {
-	//º∆À„meq
 	double uv = uxx*uxx+uyy*uyy;
 	meq[0]=rh;
 	meq[1]=rh*(-2.0+3.0*uv);
