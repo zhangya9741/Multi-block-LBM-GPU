@@ -14,7 +14,7 @@ __global__ void init_General(AREA area, D2Q9 pp, Lbd *upx, Lbd *upy)
 		pp.y[ixy] = j*dx+area.base_y;
 
 		/************************************************************************/
-		/* cylinder≥ı ºªØ       */
+		/* cylinder initialization       */
 		/************************************************************************/
 		pp.rho[ixy] = rho0_gpu;
 		pp.ux[ixy] = U0_gpu[0]; //4.0*U0_gpu*(LY_gpu-1.5-pp.y[ixy])*(pp.y[ixy]-0.5)/(LY_gpu-2.0)/(LY_gpu-2.0); //
